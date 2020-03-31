@@ -1,0 +1,9 @@
+<h1><%= search_results.foods.count %> with <%= params[:q] %></h1>
+<% search_results.foods.each do |food| %>
+  <ul class='foods-from-search'>
+      <li class='gtinUpc'>Code: <%= food.gtinupc %></li>
+      <li class='description'>Description: <%= food.description %></li>
+      <li class='brandOwner'>Brand: <%= food.brandowner %></li>
+      <li class='ingredients'>Ingredients: <%= food.ingredients %></li></ul>
+    </ul>
+<% end %>
